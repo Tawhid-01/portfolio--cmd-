@@ -1,25 +1,35 @@
-# MD Tawhid — Portfolio
+# 💻 CMD-Style Portfolio
 
-This is **one integrated Next.js project**. The uploaded static portfolio's visual direction and animation ideas have been incorporated into the main app; the original website is not nested as a second project.
+An interactive, command-line interface (CLI) inspired personal portfolio website. Designed for developers and tech enthusiasts, this portfolio offers visitors a unique terminal experience to explore skills, projects, background, and contact details using simple commands.
 
-## Included
-- Next.js App Router, React, TypeScript and SCSS
-- Dark cinematic theme with cyan accents
-- Typewriter headline, intro sequence, reveal-on-scroll styling, portrait light sweep/orbit, hover transitions, animated project rows, and reduced-motion control
-- One main portrait from the uploaded portfolio; no extra lifestyle photo gallery
-- Responsive sections for philosophy, selected work, skills, story and contact
+---
 
-## Run locally
-```bash
-npm install
-npm run dev
-```
-Then open http://localhost:3000.
+## 🌟 Features
 
-For a production build:
-```bash
-npm run build
-```
+* **Interactive Terminal UI:** Mimics a real command-line interface with customizable theme presets or classic retro styling.
+* **Custom Command Parser:** Execute commands like `help`, `about`, `skills`, `projects`, `clear`, and `contact`.
+* **Responsive & Lightweight:** Built for smooth performance on both desktop and mobile devices.
+* **Auto-Suggestions & History:** Supports command navigation using keyboard arrows (Up / Down for history) and auto-completion (`Tab`).
+* **Clean Structure:** Modular codebase making it easy to customize and deploy your own data.
 
-## Before publishing
-Review the GitHub and LinkedIn URLs in `app/page.tsx`, and verify the project descriptions and contact email. The code has not been production-build tested in this environment.
+---
+
+## 🛠️ Built With
+
+* **HTML5:** Page structure & semantic layout
+* **CSS3:** Custom terminal styling & animations
+* **JavaScript (ES6+):** Command parsing logic, state management, and DOM manipulation
+
+---
+
+## 🚀 Quick Start
+
+Follow these steps to run the project locally on your machine.
+
+### Prerequisites
+You only need a modern web browser installed (e.g., Chrome, Firefox, Edge, Safari).
+
+### Installation & Running
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Tawhid-01/portfolio--cmd-.git](https://github.com/Tawhid-01/portfolio--cmd-.git)
