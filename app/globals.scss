@@ -14,3 +14,6 @@
 .scroll-fade{opacity:0;transform:translate3d(0,28px,0);filter:blur(4px);transition:opacity .8s cubic-bezier(.2,.75,.2,1),transform .8s cubic-bezier(.2,.75,.2,1),filter .8s cubic-bezier(.2,.75,.2,1);will-change:opacity,transform,filter}
 .scroll-fade.scroll-fade-visible{opacity:1;transform:translate3d(0,0,0);filter:blur(0);will-change:auto}
 @media(prefers-reduced-motion:reduce){.scroll-fade,.scroll-fade.scroll-fade-visible{opacity:1;transform:none;filter:none;transition:none;will-change:auto}}
+
+/* Mobile anchor offset for the sticky header. */
+@media(max-width:650px){html{scroll-padding-top:68px}}
