@@ -1,6 +1,6 @@
-# 💻 CMD-Style Portfolio
+# 💻Portfolio (Use Commend prompt)
 
-An interactive, command-line interface (CLI) inspired personal portfolio website. Designed for developers and tech enthusiasts, this portfolio offers visitors a unique terminal experience to explore skills, projects, background, and contact details using simple commands.
+An interactive,  inspired personal portfolio website. Designed for developers and tech enthusiasts, this portfolio offers visitors a unique terminal experience to explore skills, projects, background, and contact details using simple commands.
 
 ---
 
