@@ -1,0 +1,1 @@
+Add your confirmed original portfolio portrait and authentic project screenshots in this folder. Update app/page.tsx to reference them. No portraits or project screenshots have been fabricated in this package.

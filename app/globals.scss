@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#050608;--surface:#121419;--surface2:#24272d;--text:#f0f0e9;--muted:#a3a9b3;--cyan:#63e6f2;--cyan-dim:rgba(99,230,242,.15);--red:#ef3340;--ember:#e8b98a;--mono:'IBM Plex Mono',monospace;--display:'Space Grotesk',sans-serif;--body:'Inter',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input{font:inherit}button{color:inherit}::selection{background:var(--cyan);color:var(--bg)}:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+
+/* Signal cursor: appears on pointer entry and expands over interactive elements. */
+.signal-cursor{position:fixed;left:0;top:0;width:24px;height:24px;border:1px solid rgba(99,230,242,.95);border-radius:50%;pointer-events:none;z-index:99999;opacity:0;mix-blend-mode:screen;box-shadow:0 0 14px rgba(99,230,242,.48),inset 0 0 10px rgba(99,230,242,.12);transition:opacity .2s ease,width .22s ease,height .22s ease,background .22s ease,border-color .22s ease;will-change:transform}
+.signal-cursor:before,.signal-cursor:after{content:'';position:absolute;left:50%;top:50%;background:#63e6f2;transform:translate(-50%,-50%);box-shadow:0 0 9px #63e6f2}
+.signal-cursor:before{width:4px;height:4px;border-radius:50%}.signal-cursor:after{width:34px;height:1px;opacity:.55}
+.signal-cursor--visible{opacity:1}.signal-cursor--hover{width:48px;height:48px;background:rgba(99,230,242,.12);border-color:#bafaff;box-shadow:0 0 25px rgba(99,230,242,.6),inset 0 0 15px rgba(99,230,242,.15)}
+@media (pointer:coarse),(prefers-reduced-motion:reduce){.signal-cursor{display:none!important}}
+
+
+/* Gentle scroll reveal for portfolio sections. The hero remains immediately visible. */
+.scroll-fade{opacity:0;transform:translate3d(0,28px,0);filter:blur(4px);transition:opacity .8s cubic-bezier(.2,.75,.2,1),transform .8s cubic-bezier(.2,.75,.2,1),filter .8s cubic-bezier(.2,.75,.2,1);will-change:opacity,transform,filter}
+.scroll-fade.scroll-fade-visible{opacity:1;transform:translate3d(0,0,0);filter:blur(0);will-change:auto}
+@media(prefers-reduced-motion:reduce){.scroll-fade,.scroll-fade.scroll-fade-visible{opacity:1;transform:none;filter:none;transition:none;will-change:auto}}
